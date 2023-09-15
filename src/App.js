@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Display from "./Components/Displayuser/Display";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [userData,setUserdata] = useState([])
+  return <div className="App">
+    <div className="overlay"></div>
+    <Navbar setUserdata={setUserdata} userData={userData}/>
+    <Display userData={userData}/>
+  </div>;
 }
 
 export default App;

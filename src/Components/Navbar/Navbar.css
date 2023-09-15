@@ -1,0 +1,11 @@
+.navbar_container{
+    height: 10%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 0;
+}
