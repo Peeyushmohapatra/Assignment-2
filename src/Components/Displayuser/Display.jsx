@@ -9,12 +9,14 @@ const Display = ({userData}) => {
                 <img src={userData.avatar_url} alt="" />
             </div>
             <div className="data_container">
-                <h1>{userData.login}</h1>
-                <h1>{userData.name}</h1>
+                <h1>Username: {userData.login}</h1>
+                <h1>Name: {userData.name}</h1>
 
-                <h3>{userData.public_repos}</h3>
-                <h3>{userData.public_gists}</h3>
-                <h3>{userData.created_at}</h3>
+                <div className="inner_data_container">
+                <h3 className='box'>No. of public repos:  {userData.public_repos}</h3>
+                <h3 className='box'>No. of public gists: {userData.public_gists}</h3>
+                </div>
+                <h3 className='box'>Profile created: {(userData.created_at).slice(0,10)}</h3>
                 <p>{userData.bio}</p>
             </div>
         </div> : userData.message === "Not Found" ? <h1 className='not_found'>Data Not Found !!!</h1> : <h1 className='initial_heading'>SEARCH FOR GITHUB REPO</h1>}

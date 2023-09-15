@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
 .display_user_container{
     height: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .initial_heading{
@@ -34,6 +37,10 @@
     backdrop-filter: blur(7px);
 }
 
+.user_data_container h1{
+    font-size: 1.4rem;
+}
+
 .image_container{
     height: 100%;
     width: 35%;
@@ -61,12 +68,31 @@
     flex-direction: column;
     gap: 10px;
     justify-content:center;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     padding: 5px;
     position: relative;
 }
 
+.inner_data_container{
+    display: flex;
+    gap: 10px;
+}
+
+.inner_data_container h3{
+    border: 2px solid rgb(8,86,226);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: rgb(8,86,226);
+}
+
+.box{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 
 
 

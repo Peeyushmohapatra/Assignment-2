@@ -9,11 +9,12 @@ const Navbar = ({setUserdata,userData}) => {
 
   return (
     <div className='navbar_container'>
-        <input value={userName} onChange={(e) => {
+        <input className='input' placeholder='Search Here 🔍' value={userName} onChange={(e) => {
             setUserName(e.target.value)
         }} type="text" />
-        <button onClick={() => {
+        <button className='search_button' onClick={() => {
             users(userName,setUserdata)
+            setUserName("")
             console.log(userData);
         }}>Search</button>
     </div>
