@@ -107,18 +107,22 @@
 }
 
 .span_tag {
-    background-color: #08AEEA;
-    background-image: linear-gradient(to right, #08AEEA 0%, #2AF598 100%);
+  background-color: #08aeea;
+  background-image: linear-gradient(to right, #08aeea 0%, #2af598 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.user_data{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #FF3CAC;
-background-image: linear-gradient(to right, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-
+.user_data {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    to right,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
 }
 
 /* @import 'compass/css3';
