@@ -10,7 +10,7 @@ const Navbar = ({setUserdata,userData}) => {
   return (
     <div className='navbar_container'>
       <div className="heading_container">
-          <h1><i class="fa-brands fa-github-alt"></i>GITHUB</h1>
+          <h1><i class="fa-brands fa-github-alt"></i>GitHub</h1>
       </div>
         <div className="input_container">
         <input className='input' placeholder='Search Here 🔍' value={userName} onChange={(e) => {
