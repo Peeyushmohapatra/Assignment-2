@@ -1,106 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
 
-.display_user_container{
-    height: 90%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nunito', sans-serif;
+.display_user_container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
 }
 
-.initial_heading{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #4158D0;
-    background-image: linear-gradient(to right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    position: relative;
-    font-size: 2.5rem;
+.initial_heading {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    to right,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  position: relative;
+  font-size: 2.5rem;
 }
 
-.not_found{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #4158D0;
-    background-image: linear-gradient(to right, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    position: relative;
-    font-size: 2.5rem;
+.not_found {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    to right,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  position: relative;
+  font-size: 2.5rem;
 }
 
-.user_data_container{
-    height: 80%;
-    width: 65%;
-    display: flex;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    border-radius: 10px;
-    position: relative;
-    backdrop-filter: blur(7px);
+.user_data_container {
+  height: 80%;
+  width: 65%;
+  display: flex;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  border-radius: 10px;
+  position: relative;
+  backdrop-filter: blur(7px);
+  border-radius: 4% 96% 4% 96% / 100% 0% 100% 0%;
 }
 
-.user_data_container h1{
-    font-size: 1.4rem;
+.user_data_container h1 {
+  font-size: 1.4rem;
 }
 
-.image_container{
-    height: 100%;
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.image_container img{
-    height: 80%;
-    width: 80%;
-    border: 4px solid rgba(147, 3, 214, 0.3);
-    border-radius: 30px;
+.image_container {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border-radius: 30px;
     border-bottom: 4px solid red;
     border-left: 4px solid red;
     border-top: 4px solid blue;
-    border-right: 4px solid blue;
+    border-right: 4px solid blue; */
 }
 
-.data_container{
-    height: 100%;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content:center;
-    align-items: flex-start;
-    color: white;
-    padding: 5px;
-    position: relative;
+.image_container img {
+  height: 65%;
+  width: 80%;
+  border-radius: 30px;
 }
 
-.inner_data_container{
-    display: flex;
-    gap: 10px;
+.data_container {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 5px;
+  position: relative;
 }
 
-.inner_data_container h3{
-    border: 2px solid rgb(8,86,226);
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: rgb(8,86,226);
+.inner_data_container {
+  display: flex;
+  gap: 10px;
 }
 
-.box{
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.inner_data_container h3 {
+  border: 2px solid rgb(8, 86, 226);
+  /* font-size: 0.8rem; */
+  letter-spacing: 2px;
+  color: rgb(8, 86, 226);
 }
 
+.box {
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 
+.span_tag {
+    background-color: #08AEEA;
+    background-image: linear-gradient(to right, #08AEEA 0%, #2AF598 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.user_data{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #FF3CAC;
+background-image: linear-gradient(to right, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
 
-
-
-
-
+}
 
 /* @import 'compass/css3';
 

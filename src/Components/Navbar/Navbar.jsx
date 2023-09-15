@@ -9,6 +9,10 @@ const Navbar = ({setUserdata,userData}) => {
 
   return (
     <div className='navbar_container'>
+      <div className="heading_container">
+          <h1>SEARCH GITHUB USER</h1>
+      </div>
+        <div className="input_container">
         <input className='input' placeholder='Search Here 🔍' value={userName} onChange={(e) => {
             setUserName(e.target.value)
         }} type="text" />
@@ -17,6 +21,7 @@ const Navbar = ({setUserdata,userData}) => {
             setUserName("")
             console.log(userData);
         }}>Search</button>
+        </div>
     </div>
   )
 }
